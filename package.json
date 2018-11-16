@@ -6,7 +6,9 @@
   "scripts": {
     "webpack-dev-server": "webpack-dev-server",
     "webpack": "webpack",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",    
     "dev": "npm run webpack-dev-server -- --env.mode development",
+    "dev:hot": "npm run dev -- --hot",
     "prod": "npm run webpack -- --env.mode production",
     "start": "npm run dev"
   },
